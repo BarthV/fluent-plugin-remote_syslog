@@ -3,7 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "fluent-plugin-remote_syslog"
+  spec.name          = "fluent-plugin-remote_syslog_barthv"
   spec.version       = File.read("VERSION").strip
   spec.authors       = ["Richard Lee"]
   spec.email         = ["dlackty@gmail.com"]
@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "test-unit-rr"
 
   spec.add_runtime_dependency "fluentd"
-  spec.add_runtime_dependency "remote_syslog_sender", ">= 1.1.1"
+  spec.add_runtime_dependency "remote_syslog_sender_barthv", ">= 1.1.1"
 end
